@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kér'com - Votre maison de la communication</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <!-- <i class="fas fa-feather-alt me-2"></i>--> <img src="Images/loogo.jpg" alt=""> KER'COM 
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#accueil">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#apropos">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Carousel -->
+    <div id="heroCarousel" class="carousel slide hero-carousel" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+        </div>
+        
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="background-image: url('Images/img3.jpg')">
+                <div class="carousel-overlay">
+                    <div class="hero-content">
+                        <h1>Votre maison de la communication</h1>
+                        <p>Création et réalisation de tous types de supports de communication pour valoriser votre image</p>
+                        <a href="#contact" class="btn-contact">
+                            <i class="fas fa-phone me-2"></i>Nous contacter
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80')">
+                <div class="carousel-overlay">
+                    <div class="hero-content">
+                        <h1>Solutions créatives innovantes</h1>
+                        <p>Du design graphique aux objets publicitaires, nous donnons vie à vos idées</p>
+                        <a href="#contact" class="btn-contact">
+                            <i class="fas fa-rocket me-2"></i>Démarrer un projet
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1553484771-371a605b060b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80')">
+                <div class="carousel-overlay">
+                    <div class="hero-content">
+                        <h1>Partenaire de votre succès</h1>
+                        <p>Accompagnement personnalisé pour tous vos besoins en communication</p>
+                        <a href="#contact" class="btn-contact">
+                            <i class="fas fa-handshake me-2"></i>Collaborer avec nous
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nos Services</h2>
+                <p>Découvrez notre gamme complète de services de communication pour répondre à tous vos besoins</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <img src="Images/img15.jpg" alt="Vêtements professionnels" class="service-image">
+                        <div class="service-icon">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <h4>Vêtements professionnels</h4>
+                        <p>Polos, t-shirts, chemises, vestes de sécurité personnalisés avec votre logo et vos couleurs</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <img src="Images/img8.jpg" alt="Objets publicitaires" class="service-image">
+                        <div class="service-icon">
+                            <i class="fas fa-gift"></i>
+                        </div>
+                        <h4>Objets publicitaires</h4>
+                        <p>Mugs, clés USB, sacs, porte-clés, stylos et bien d'autres objets personnalisés</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <img src="Images/img14.jpg" alt="Imprimerie" class="service-image">
+                        <div class="service-icon">
+                            <i class="fas fa-print"></i>
+                        </div>
+                        <h4>Imprimerie</h4>
+                        <p>Cartes de visite, brochures, affiches, catalogues et tous supports papier</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <img src="Images/img10.jpg" alt="Design graphique" class="service-image">
+                        <div class="service-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h4>Design graphique</h4>
+                        <p>Création de logos, charte graphique, identité visuelle pour votre entreprise</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <img src="Images/img19.jpg" alt="Signalétique" class="service-image">
+                        <div class="service-icon">
+                            <i class="fas fa-sign"></i>
+                        </div>
+                        <h4>Signalétique</h4>
+                        <p>Panneaux, enseignes, roll-up, kakémonos pour votre communication extérieure</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <img src="Images/img5.jpg"Événementiel" class="service-image">
+                        <div class="service-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h4>Événementiel</h4>
+                        <p>Supports pour vos événements : stands, décorations, matériel promotionnel</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="apropos" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about-text">
+                        <h2>À propos de Kér'com</h2>
+                        <p>
+                            Kér'com est votre partenaire de confiance dans le domaine de la communication. 
+                            Basée à Dakar, notre agence accompagne les entreprises et particuliers dans 
+                            la création et la réalisation de leurs supports de communication.
+                        </p>
+                        <p>
+                            Forte de notre expertise et de notre créativité, nous offrons des solutions 
+                            personnalisées qui reflètent parfaitement votre identité et vos valeurs. 
+                            De la conception à la livraison, nous nous engageons à fournir des produits 
+                            de qualité supérieure.
+                        </p>
+                        <p>
+                            Notre équipe de professionnels passionnés met tout en œuvre pour transformer 
+                            vos idées en réalité et vous accompagner dans votre réussite.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="Images/loogo.jpg" alt="Équipe Kér'com" class="about-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="contact-info">
+                        <h2>Contactez-nous</h2>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="contact-item">
+                                    <i class="fas fa-phone"></i>
+                                    <span>+221 78 838 63 59</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="contact-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>contactkercom@gmail.com</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="contact-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Hann Mariste1, Dakar, Sénégal</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <a href="tel:+221788386359" class="btn-contact me-3">
+                                <i class="fas fa-phone me-2"></i>Appeler maintenant
+                            </a>
+                           <a href="formulaire.html" class="btn-contact">
+                              <i class="fas fa-envelope me-2"></i>Envoyer un message
+                           </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Ker'com - Votre maison de la communication. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+       
+</body>
+</html>
