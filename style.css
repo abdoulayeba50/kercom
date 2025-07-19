@@ -96,6 +96,13 @@
             text-decoration: none;
             display: inline-block;
             box-shadow: 0 5px 15px rgba(255,107,53,0.4);
+            flex: 1; /* prend de l'espace équitablement */
+        }
+        /* Responsive : les boutons prennent toute la ligne en-dessous de 576px */
+        @media (max-width: 576px) {
+            .btn-contact {
+                width: 100%;
+            }
         }
 
         .btn-contact:hover {
