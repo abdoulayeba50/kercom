@@ -96,8 +96,35 @@
             text-decoration: none;
             display: inline-block;
             box-shadow: 0 5px 15px rgba(255,107,53,0.4);
-            flex: 1; /* prend de l'espace équitablement */
+           flex: 1 1 200px; /* largeur min 200px, extensible */
         }
+
+.contact-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+/* .btn-contact {
+    background-color: #ff6b35;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    text-align: center;
+  
+    transition: background-color 0.3s ease;
+    max-width: 300px;
+} */
+
+.btn-contact:hover {
+    background-color: #e65b28;
+}
+
+
+
         /* Responsive : les boutons prennent toute la ligne en-dessous de 576px */
         @media (max-width: 576px) {
             .btn-contact {
