@@ -38,68 +38,71 @@
         }
 
         /* Hero Carousel */
-        .hero-carousel {
-            height: 100vh;
-            position: relative;
-            overflow: hidden;
-        }
+           .hero-carousel {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
 
-        .carousel-item {
-            height: 100vh;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            position: relative;
-        }
+.carousel-item {
+    height: 100vh;
+    background-size: contain; /* ← empêche le zoom/coupe */
+    background-position: center bottom; /* ← centrée et un peu en bas */
+    background-repeat: no-repeat;
+    background-color: #ffffff; /* ← ajoute une couleur de fond propre */
+    position: relative;
+}
 
-        .carousel-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(135deg, rgba(255,107,53,0.8), rgba(44,62,80,0.6));
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+.carousel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255,107,53,0.8), rgba(44,62,80,0.6));
+    display: flex;
+    align-items: flex-end; /* ← contenu placé plus bas */
+    justify-content: center;
+    padding-bottom: 60px; /* ← espace avec le bas de l'écran */
+}
 
-        .hero-content {
-            text-align: center;
-            color: white;
-            max-width: 800px;
-            padding: 0 20px;
-        }
+.hero-content {
+    text-align: center;
+    color: white;
+    max-width: 800px;
+    padding: 0 20px;
+   
+    border-radius: 10px;
+}
 
-        .hero-content h1 {
-            font-size: 3.5rem;
-            font-weight: bold;
-            margin-bottom: 1rem;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-            /* white-space: nowrap; */
-        }
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
 
-        .hero-content p {
-            font-size: 1.3rem;
-            margin-bottom: 2rem;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
-             text-align: center;
-        }
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    text-align: center;
+}
 
-        .btn-contact {
-            background: var(--primary-orange);
-            color: white;
-            padding: 15px 40px;
-            font-size: 1.1rem;
-            font-weight: 600;
-            border: none;
-            border-radius: 50px;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            display: inline-block;
-            box-shadow: 0 5px 15px rgba(255,107,53,0.4);
-           flex: 1 1 200px; /* largeur min 200px, extensible */
-        }
+.btn-contact {
+    background: var(--primary-orange);
+    color: white;
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 5px 15px rgba(255,107,53,0.4);
+    flex: 1 1 200px;
+}
 
 .contact-buttons {
     display: flex;
@@ -108,22 +111,10 @@
     justify-content: center;
 }
 
-/* .btn-contact {
-    background-color: #ff6b35;
-    color: white;
-    padding: 12px 24px;
-    text-decoration: none;
-    border-radius: 8px;
-    font-size: 16px;
-    text-align: center;
-  
-    transition: background-color 0.3s ease;
-    max-width: 300px;
-} */
-
 .btn-contact:hover {
     background-color: #e65b28;
 }
+
 
 
 
@@ -361,23 +352,41 @@
             opacity: 1;
             transform: scale(1.2);
         }
-        /*************************FORMULAIRE CSS**********************************/
+/*************************FORMULAIRE CSS**********************************/
+   /* SECTION GLOBALE POUR CENTRER LE FORMULAIRE */
+#contact {
+    background-color: #f4f4f4;
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-        .contact-form-container {
+/* CONTENEUR DU FORMULAIRE */
+.contact-form-container {
     max-width: 500px;
-    margin: 100px auto;
+    width: 100%;
+    margin: 0 auto;
     background-color: white;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
+/* TITRE */
 .contact-form-container h2 {
     color: #ff6b35;
     margin-bottom: 30px;
+    font-size: 2rem;
 }
 
+/* CHAMPS INPUT & TEXTAREA */
 .contact-form-container input,
 .contact-form-container textarea {
     width: 100%;
@@ -386,22 +395,50 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
+    box-sizing: border-box;
 }
 
+/* BOUTON ENVOYER */
 .contact-form-container button {
     background-color: #ff6b35;
     color: white;
     border: none;
     padding: 15px 30px;
     font-size: 16px;
+    font-weight: 600;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 5px 15px rgba(255,107,53,0.4);
 }
 
 .contact-form-container button:hover {
     background-color: #e65b28;
 }
+
+/* LIGHTBOX (SI TU UTILISES POUR AFFICHER DES IMAGES) */
+.lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.lightbox-overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255,255,255,0.2);
+    background: white;
+    padding: 10px;
+}
+
 
 /**********************************************************************/
 .lightbox-overlay {
