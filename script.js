@@ -53,3 +53,19 @@
             card.style.transition = 'all 0.6s ease';
             observer.observe(card);
         });
+
+        /*******************************************************************************************/
+
+        document.querySelectorAll('.lightbox-link').forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const lightbox = document.getElementById('lightbox');
+        const img = lightbox.querySelector('img');
+        img.src = this.href;
+        lightbox.style.display = 'flex';
+    });
+});
+
+document.getElementById('lightbox').addEventListener('click', function() {
+    this.style.display = 'none';
+});
